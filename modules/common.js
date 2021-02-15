@@ -1,19 +1,9 @@
 const RIPEMD160 = require('ripemd160');
 const crypto = require('crypto');
 
-/**
- * Atomic swap class
- *
- * @author Djenad Razic
- * @company Altcoin Exchange, Inc.
- */
+
 var Common = function () {
 
-    /**
-     * Generate random secret
-     * @returns {{secret: (*|string), hashedSecret: *}}
-     * @constructor
-     */
     this.GenerateSecret = function() {
 
         var secretBuffer = crypto.randomBytes(32);
@@ -26,14 +16,6 @@ var Common = function () {
         return { "secret": secret, "hashedSecret": hashedSecret };
     };
 
-    /**
-     * Extend object
-     * @param target
-     * @param source
-     * @param exclude
-     * @returns {*}
-     * @constructor
-     */
     this.Extend = function(target, source, exclude) {
         if (source) {
             for(var prop in source) {
