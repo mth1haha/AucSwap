@@ -6,9 +6,9 @@ Here we list some key codes ofour experiment, including collectting bids, sortti
 
 With Ethereum browser, we can easily implement the algorithms and functions mentioned in the paper. So the main languages here is JavaScript and Go.
 
-Our code structure is as follows:
+Our code structure is listed as follows:
 
-The bin folder is dominated by function execution code. GossipBroadcast mainly implement the broadcast function. Rank is a program that sorts the collected bids. The program inputs the collected bids, sorts them and returns the highest bid. The KeyPair program generates the secret key pairs used in the exchange process. EthAtomicSwap interacts with Ethereum browser to implement the front-end interaction function of AtomicSwap protocol.
+The bin folder are all execution codes. GossipBroadcast implement the broadcast function. Rank sorts the collected bids. The program inputs the collected bids, sorts them and returns the highest bid. The KeyPair program generates the secret key pairs used in the exchange process. EthAtomicSwap interacts with Ethereum browser to implement the front-end interaction function of AtomicSwap protocol.
 
 In the Build/Contract folder are the configuration files during the execution progress.
 
