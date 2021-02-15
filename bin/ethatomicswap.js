@@ -1,15 +1,8 @@
-/**
- * Ethereum atomic swaps
- *
- * @author Djenad Razic
- * @company Altcoin Exchange, Inc.
- */
 
 var AbiConfig = require("../abi/atomicswap");
 var AppConfig = require("../config");
 var AtomicSwap = require("../modules/atomicswap");
 
-// Get arguments
 var argv = require('minimist')(process.argv.slice(2), opts={string:"_"});
 
 var help = "Usage: ethatomicswap [cmd] [params] \n\n" +
@@ -18,12 +11,10 @@ var help = "Usage: ethatomicswap [cmd] [params] \n\n" +
     "redeem <secret> <hashedSecret> \n" +
     "refund <hashedSecret> \n";
 
-// Available commands
 var _commands = ["initiate", "participate", "redeem", "refund"];
 
 argv._[0] = argv._[0].toLowerCase();
 
-// Check for available commands
 if (_commands.indexOf(argv._[0]) == -1) {
     console.log(help);
     return;
