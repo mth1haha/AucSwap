@@ -1,8 +1,8 @@
 AucSwap is a decentralized cross-blockchain asset transfer protocol. Here we give the architecture of the program.
 
-Our experiment environment is built on Ethereum. The basic program is shown on  https://github.com/ethereum/go-ethereum. Our experiment is based on the code of this project, so there are many functions in the code that are implemented by calling Ethereum's interface.
+Our experiment environment is built on Ethereum. The basic program is shown on  https://github.com/ethereum/go-ethereum. Our experiment implemented based on this project, so there are many functions that are implemented by calling Ethereum's API.
 
-Here we list some key codes ofour experiment, including the ability to collect bids, sort bids, swap assets via the Atomic Swap protocol, and so on. Based on the existing Ethereum interface, many functions can be implemented by calling the API, which we won't show here. For example, it can spread information in the P2P network in the Ethereum system, carry out hash operation and electronic signature with Crypto function, and execute smart contract through the ETH calling.
+Here we list some key codes ofour experiment, including collectting bids, sortting bids, swapping assets via the Atomic Swap protocol, and so on. Based on the existing Ethereum project, many functions can be implemented by calling the API, which we won't show here. For example, it can spread information in the P2P network in the Ethereum system, carry out hash operation and electronic signature with Crypto function, and execute smart contract through the ETH calling.
 
 With Ethereum browser, we can easily implement the algorithms and functions mentioned in the paper. So the main languages here is JavaScript and Go.
 
